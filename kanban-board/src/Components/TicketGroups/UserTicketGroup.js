@@ -1,14 +1,4 @@
-import { useEffect } from "react";
-
-const UserTicketGroup = (
-    TicketsByUser,
-    priorityIcons,
-    statusIcons,
-    priorityValues,
-    priorityLabels,
-    statusValues
-) =>{
-    useEffect(()=>console.log(TicketsByUser))
+const UserTicketGroup = ({TicketsByUser}) =>{
     return(
         <>
             User
