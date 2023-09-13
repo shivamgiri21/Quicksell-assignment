@@ -5,14 +5,17 @@ import {
   Routes,
   Navigate,
 } from "react-router-dom";
-import Home from './Components/Home';
+
 import AppWrapper from './AppWrapper';
+import Header from './Components/Header';
+import Home from './Components/Home';
 
 
 const App = () => {
   return (
     <Router>
       <AppWrapper>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Navigate to="/" />} />
