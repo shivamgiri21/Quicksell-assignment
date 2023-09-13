@@ -74,7 +74,7 @@ const CustomTicketCard = ({ ticket, getUserAvailability }) => {
                     }}
                 >
                     {ticket?.tag?.map((tag)=>(
-                        <Paper style={{ padding: "0.1rem 0.2rem 0.2rem 0.1rem" }}>
+                        <Paper  key = {tag} style={{ padding: "0.1rem 0.2rem 0.2rem 0.1rem" }}>
                             <Radio
                                 disabled={true}
                                 icon={<CircleIcon style={{ fontSize: 14 }} />}

@@ -8,7 +8,7 @@ import {
 
 import AppWrapper from './AppWrapper';
 import Header from './Components/Header';
-import Home from './Components/Home';
+import Dashboard from './Components/Dashboard';
 
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
       <AppWrapper>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </AppWrapper>

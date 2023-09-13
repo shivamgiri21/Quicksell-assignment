@@ -15,12 +15,12 @@ import UserTicketGroup from "./TicketGroups/UserTicketGroup";
 import PriorityTicketGroup from "./TicketGroups/PriorityTicketGroup";
 
 
-const MainContainer = styled(Grid)({
+const MainBox = styled(Grid)({
     /* ... */
 });
 
 
-const Home = () => {
+const Dashboard = () => {
     const { data, isLoaded } = useContext(DataContext)
     const { AppState } = useContext(AppStateContext);
     const { TicketsByUser, TicketsByStatus, TicketsByPriority } = Utils(data, AppState)
@@ -33,7 +33,7 @@ const Home = () => {
                     padding: "1rem",
                 }}
             >
-                <MainContainer container>
+                <MainBox container>
                     {!isLoaded ? (
                             <Backdrop
                                 open={!isLoaded}
@@ -67,10 +67,10 @@ const Home = () => {
                     }
 
 
-                </MainContainer>
+                </MainBox>
             </Box>
         </>
     );
 }
 
-export default Home;
+export default Dashboard;
